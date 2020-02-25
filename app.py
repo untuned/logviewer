@@ -18,7 +18,7 @@ if prefix == "NONE":
     prefix = ""
 
 app = Sanic(__name__)
-app.using_oauth = False
+app.using_oauth = True
 
 Session(app, interface=InMemorySessionInterface())
 app.static("/static", "./static")
